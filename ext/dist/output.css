@@ -1,0 +1,50 @@
+.language-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.language-list .list-group-item {
+  border-radius: 20px;
+  margin: 0 5px;
+  background-color: #f8f9fa;
+  border: none;
+  font-weight: bold;
+  padding: 5px 15px;
+}
+
+.social-icons {
+  font-size: 1.5em;
+  margin-top: 30px;
+}
+
+.social-icons a {
+  color: #6c757d;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #343a40;
+}
+
+.hero-banner {
+  background: none;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 30px 0;
+  margin-top: 50px;
+}
+
+.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+  

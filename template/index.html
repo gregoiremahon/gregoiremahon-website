@@ -18,10 +18,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
 </head>
 
-<header class="hero-banner">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<header class="hero-banner" :class="{ 'bg-light': !isDarkModeOn, 'bg-dark': isDarkModeOn }">
+    <nav class="navbar navbar-expand-lg navbar-light" :class="{ 'bg-light': !isDarkModeOn, 'bg-dark': isDarkModeOn }">
         <div class="container">
             <a class="navbar-brand" href="./index.html">gregoiremahon</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,11 +48,12 @@
 
 
 <body>
-    
+    <div id="app">
         <div class="row">
             <div class="col-md-12 text-center">
-                <button id="dark-mode-toggle" class="btn btn-outline-secondary">Toggle Dark Mode</button>
-            </div>
+                <button id="dark-mode-toggle" class="btn btn-outline-secondary dark-mode-toggle" @click="toggleDarkMode">Toggle Dark Mode</button>
+            </div>              
+              
         </div>
         <div class="container">
             <div class="row about-section">
@@ -81,6 +83,9 @@
                     </div>
                 </div>
         </footer>
- 
+    </div>
+
+
+    <script src="./js/main.js"></script>    
 </body>
 </html>
