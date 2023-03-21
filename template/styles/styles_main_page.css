@@ -28,9 +28,8 @@
 }
 
 .hero-banner {
-    background: url('path/to/your/image.jpg') no-repeat center center;
-    background-size: cover;
-    height: 100vh;
+    background: none;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,4 +41,30 @@ footer {
     background-color: #f8f9fa;
     padding: 30px 0;
     margin-top: 50px;
+}
+body.dark-mode {
+    background-color: #212529;
+    color: #f8f9fa;
+}
+
+body.dark-mode .hero-banner {
+    color: #f8f9fa;
+}
+
+body.dark-mode .social-icons a {
+    color: #adb5bd;
+}
+
+body.dark-mode .social-icons a:hover {
+    color: #13314e;
+}
+
+body.dark-mode footer {
+    background-color: #343a40;
+}
+
+@layer utilities {
+    .content-auto {
+        content-visibility: auto;
+    }
 }
