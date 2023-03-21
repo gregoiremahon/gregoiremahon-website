@@ -43,8 +43,17 @@ footer {
   margin-top: 50px;
 }
 
+.dark-mode .hero-banner {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode footer {
+  background-color: #222;
+  color: #fff;
+}
+
 .dark-mode {
   background-color: #222;
   color: #fff;
 }
-  

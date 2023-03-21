@@ -1,0 +1,22 @@
+{
+  "name": "bootstrap",
+  "version": "5.3.0",
+  "description": "Bootstrap",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "gregoiremahon-website"
+  },
+  "keywords": [
+    "jsp"
+  ],
+  "author": "Gregoire Mahon",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.0-alpha1",
+    "bootstrap-icons": "^1.10.3"
+  }
+}
