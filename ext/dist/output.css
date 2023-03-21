@@ -57,3 +57,13 @@ footer {
   background-color: #222;
   color: #fff;
 }
+
+.about-text:hover {
+  color: #007bff;
+  transition: color 0.3s ease-in-out;
+}
+
+.hero-banner:hover {
+  background-color: #e6e6e6;
+  transition: background-color 0.3s ease-in-out;
+}
