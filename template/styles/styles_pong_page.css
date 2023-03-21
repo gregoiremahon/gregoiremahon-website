@@ -1,0 +1,17 @@
+body {
+    background-color: #4c7399;
+    font-family: 'Roboto', sans-serif; /* Utilisation de la police Roboto */
+}
+canvas {
+    display: block;
+    margin: auto;
+    background-color: black;
+}
+.title {
+    font-weight: bold;
+    color: #0d6efd;
+}
+.game-info {
+    color: #212529;
+    font-size: 18px;
+}
