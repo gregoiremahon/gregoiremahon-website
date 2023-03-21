@@ -26,3 +26,20 @@
 .social-icons a:hover {
     color: #343a40;
 }
+
+.hero-banner {
+    background: url('path/to/your/image.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 30px 0;
+    margin-top: 50px;
+}
