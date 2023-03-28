@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pong Game</title>
+    <title>2d_shooter</title>
     <!-- Import Bootstrap -->
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <!-- Import styles.css -->
@@ -48,36 +48,37 @@
     <div id="app">
         <div class="container-fluid">
             <div class="row text-center my-4">
-                <div class="col">
-                
-                    <h1 class="display-3 animate__animated animate__bounce">2d shooter !</h1>
-                    <button type="button" class="btn btn-outline-info animate__animated animate__fadeIn" @click="redirect_github">github</button>
-                </div>
+              <div class="col">
+                <h1 class="display-3 animate__animated animate__bounce">2D Shooter!</h1>
+                <button type="button" class="btn btn-outline-info animate__animated animate__fadeIn" @click="redirectGithub">GitHub</button>
+                <button type="button" class="btn btn-outline-info animate__animated animate__fadeIn" id="button" @click="init_shooter_game">Start!</button>
+              </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    <canvas id="2d_shooter" width="800" height="400"></canvas>
-                </div>
-            </div>
-            <div class="row text-center my-4">
-                <div class="col">
+                <!-- HUD -->
+                <div class="hud">
+                    <span>Score :</span>
+                    <div class="hud__score">
+                      <span>0</span>
+                    </div>
                     
+                  </div>
+                  <!-- Game canvas -->
+                <canvas id="canvas" width="800" height="400" style="border:1px solid #d3d3d3;"></canvas></canvas>
+                <!-- Controls information -->
+                <div class="row text-center my-4">
                     <p class="lead">Touches de contrôle :</p>
-                    <p>Palette gauche :  Z  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
-                      </svg>,            S     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
-                      </svg></p>
-                    <p>Palette droite : Flèche haut     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
-                      </svg>, Flèche bas     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
-                      </svg></p>
+                    <p>Tirer : Shift gauche</p>
+                    <p>Se déplacer vers la gauche : Q</p>
+                    <p>Se déplacer vers la droite : D</p>
+                    <p class="text-bg-info">Coming soon : User ranking and issues correction + new game modes</p>
                 </div>
-                <p class="text-bg-info">Coming soon : Users ranking and issues correction</p>
-            </div>
+               
+
+              </div>
         </div>
+        
     </div>
+    
 
     <!-- Import Vue.js -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
